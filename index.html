@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Ka, initial-scale=1.0">
+    <title>Kaiso Sushi</title>
+    <link rel="shortcut icon" href="./src/image/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="load"> <img src="./src/image/logo.png" alt=""> </div>
+    <div class="inner inner-menu">
+        <div class="container">
+            <div class="grid-menu">
+                <div> <img src="./src/image/logo.png" alt=""> </div>
+                <div class="link-menu menu"> 
+                    <div> <img src="./src/ico/menu.svg" alt=""> MENU </div>
+                    <div> <img src="./src/ico/close.svg" alt=""> MENU </div>                     
+                </div>
+                <div class="link-user user loged">                    
+                    <div>
+                        <a href="./login.html">LOGIN</a> |
+                        <a href="./cadastro.html">REGISTRAR</a>
+                    </div>
+                    <div>
+                        Olá <b>Bruno</b> |
+                        <a href="./perfil.html">Perfil</a>
+                    </div>
+                </div>
+                <div class="btn-addcart"><img src="./src/ico/cart.svg" alt=""></div>                    
+            </div>
+        </div>
+    </div>
+    <div class="inner inner-pop-menu menu">
+        <div class="container">
+            <div class="grid-pop-menu"></div>
+            <div class="space"></div>
+            <a href="./menu.html" class="link-menu-completo"> ver menu completo </a>
+        </div>
+    </div>
+    <div class="inner inner-slider">
+        <div class="inner inner-shadow inner-shadow-splide">
+            <div>
+                <h2 class="title-seach">
+                    INSIRA A SUA LOCALIDADE E ESCOLHA <br>
+                    O TIPO DE ENTREGA
+                </h2>
+                <div class="perquisa-box">
+                    <div class="perquisa-title">
+                        <span class="active">DELIVERY</span>
+                        <span>TAKEWAY</span>
+                    </div>
+                    <form action="javascript:void(0)" class="search">
+                        <input type="text" placeholder="INTRODUZA A SUA MORADA OU CÓDIGO POSTAL">
+                        <button type="submit"> <img src="./src/ico/search.svg" alt=""> </button>
+                    </form>
+                </div>
+            </div>
+            <div class="play"></div>
+        </div>
+    </div>
+    <div class="inner inner-destaque">
+        <div class="container">
+            <div class="space" style="--line: 50px"></div>
+            <h2>Nossos destaques</h2>
+            <div class="space"></div>
+            <div class="grid-destaque">
+            </div>
+            <div class="space" style="--line: 50px"></div>
+        </div>
+    </div>
+    <div class="inner inner-about">
+        <div class="inner inner-shadow">
+            <div class="container">
+                <h2>Quem somos nós?</h2>
+                <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit 
+                    voluptatem accusantium doloremque laudantium,
+                    totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et
+                    quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam 
+                    voluptatem quia voluptas sit aspernatur aut odit aut fugit,
+                    sed quia consequuntur magni dolores eos.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="inner inner-footer">
+        <div class="container">
+            <div class="grid-footer">
+                <div>
+                    <img src="./src/image/logo.png" height="120" alt="">
+                    <p>
+                        ACERCA KAISÕ <br>
+                        ALERGÉNIOS <br>
+                        TERMOS E CONDIÇÕES <br>
+                        POLÍTICA DE PRIVACIDADE <br>
+                        LIVRO DE RECLAMAÇÕES <br>
+                        CONTATO@KAISO.PT <br>
+                    </p>
+                </div>
+                <div>
+                    <h3>CENTRO DE AJUDA</h3>
+                    <a href="mail:CONTATO@KAISO.PT" class="btn-to-email">
+                        <img src="./src/ico/email.svg" alt="">
+                        Precisa de ajuda?
+                    </a>
+                </div>
+                <div>
+                    <h3>NOSSAS REDES SOCIAIS</h3>
+                    <a href="https://www.facebook.com"> <img class="ico-redes" src="./src/ico/facebook.svg" alt=""> </a>
+                    <a href="https://www.instagram.com"> <img class="ico-redes" src="./src/ico/instagram.svg" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="cart-header">
+            <img src="./src/ico/close.svg" height="30" alt="" class="cose-cart" > <br>
+            <div class="space"></div>
+            <strong>Dados da entrega</strong>
+            <p>José Mauro de Vasconcelos, 8 - Pirapora do Bom Jesus</p>
+            <b>Hoje</b>
+        </div>
+        <div class="cart-body">
+            <strong class="cart-title">
+                <span>Seu pedido</span>
+            </strong>
+            <span class="space"></span>
+            <div class="grid-iten-pedido">
+                <div>
+                    <b>1</b>
+                    <span>Missoshiro</span>
+                    <b>11,60 €</b>
+                </div>
+                <div>
+                    <b>1</b>
+                    <span>Cebiche de peixe branco</span>
+                    <b>13,90 €</b>
+                </div>
+            </div>
+            <span class="space"></span>
+            <strong class="cart-title">
+                <span>TOTAL</span>
+                <span> 25,50 €</span>
+            </strong>
+            <span class="space"></span>
+            <a href="./finalizar.html" class="btn-cart">Ir para pagamento</a>
+        </div>
+    </div>
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>
