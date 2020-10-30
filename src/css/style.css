@@ -9,6 +9,9 @@ body, img {
     padding: 0;
     border: 0;
 }
+[hidden] {
+    display: none !important;
+}
 img {
     max-width: 100%;
 }
@@ -167,6 +170,7 @@ img {
 .inner-footer {
     background-color: var(--color-bg);
     padding: 35px 0;
+    box-shadow: 0 0 3px 2px rgba(0, 0, 0, .2);
 }
 .grid-footer {
     display: grid;
@@ -231,6 +235,7 @@ img {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 30px;
+    text-align: center;
 }
 @media screen and (max-width: 800px ) 
 {
@@ -422,13 +427,187 @@ img {
 }
 .grid-iten-pedido > div {
     display: grid;
-    grid-template-columns: 50px 1fr 70px;
+    grid-template-columns: 50px 1fr 70px 16px;
     background-color: var(--color-bg);
     color: #EEE;
     padding: 8px 12px;
     border-radius: 50px;
     font-weight: lighter;
+    align-items: center;
 }
 .grid-iten-pedido > div b {
     color: var(--vermelho);
+}
+@media screen and (min-width: 800px ) 
+{
+    .hidden-log {
+        display: none !important;
+    }
+}
+@media screen and (max-width: 800px ) 
+{
+    .hidden-md {
+        display: none !important;
+    }
+}
+.ico-user {
+    display: block;
+    filter: invert();
+}
+.container-frete {
+    display: block;
+    max-width: 85vw;
+}
+.cargar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, .9);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 999999999;
+    backdrop-filter: blur(3px);
+}
+.cargar img {
+    height: 30px;
+}
+.inner-produto-title {
+    color: #FFF;
+    background-size: cover;
+    height: 200px;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.inner-produto-title h1 {
+    display: flex;
+    width: 100%;
+    height: 200px;
+    background-color: rgba(0, 0, 0, .8);
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur( 3px );
+
+}
+.inner-produto {
+    background-color: var(--color-bg);
+    color: #EEE;
+}
+.grid-single-prod {
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    grid-gap: 30px;
+}
+@media screen and (max-width: 800px ) 
+{
+    .grid-single-prod {
+        grid-template-columns: 1fr;
+        width: 90%;
+        text-align: center;
+    }
+}
+.grid-quant {
+    display: grid;
+    grid-template-columns: 40px 40px 40px 1fr;
+    align-items: center;
+    grid-gap: 16px;
+}
+.btn-add-to-cart {
+    display: inline-grid;
+    grid-template-columns: 40px 1fr;
+    background-color: var(--vermelho);
+    align-items: center;
+    border-radius: 50px;
+    padding-right: 20px;
+    cursor: pointer;
+}
+.btn-add-to-cart:hover {
+    filter: brightness(1.1);
+}
+.btn-add-to-cart img {
+    filter: invert();
+    display: block;
+    padding: 12px;
+}
+.prod-ico {
+    display: block;
+    padding: 12px;
+    filter: invert() opacity(.5);
+    cursor: pointer;
+}
+.prod-ico:hover {
+    filter: invert() opacity(1);
+}
+.prod-quant {
+    display: block;
+    background-color: rgba(0, 0, 0, .2);
+    border: 1px solid #444;
+    text-align: center;
+    border-radius: 5px;
+    line-height: 40px;
+}
+.prod-price {
+    font-size: 28px;
+    font-weight: bolder;
+}
+.list-cat a {
+    display: block;
+    text-decoration: none;
+    color: #EEE;
+    line-height: 40px;
+    border-bottom: 1px solid #0003;
+    text-indent: 20px;
+}
+.list-cat a:hover {
+    background-color: #FFF1;
+}
+.grid-category {
+    display: grid;
+    grid-template-columns: 250px 1fr;
+    grid-gap: 20px;
+}
+@media screen and (max-width: 800px ) 
+{
+    .grid-category {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+}
+.inner-header-category {
+    background-image: url('../bg/3.jpg');
+    background-position: center center;
+    background-size: cover;
+    color: #EEE;
+}
+.inner-header-category > div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, .8);
+    width: 100%;
+    backdrop-filter: blur(2px);
+}
+.grid-header-category {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    min-height: 250px;
+    text-align: center;
+}
+.grid-header-category b {
+    display: block;
+}
+.grid-header-local {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    grid-gap: 20px;
+}
+.btn-alter {
+    display: block;
+    background-color: var(--vermelho);
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
 }

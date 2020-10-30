@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Ka, initial-scale=1.0">
+    <title>Kaiso Sushi</title>
+    <link rel="shortcut icon" href="./src/image/ico.png" type="image/x-icon">
+    <link rel="stylesheet" href="./src/css/style.css">
+</head>
+<body>
+    <div class="load"> <img src="./src/image/logo.png" alt=""> </div>
+    <div class="cargar" hidden> <img src="./src/image/loading.gif" alt="cargar"> </div>
+    <div class="inner inner-menu">
+        <div class="container">
+            <div class="grid-menu">
+                <div> <img src="./src/image/logo.png" alt=""> </div>
+                <div class="link-menu menu"> 
+                    <div> <img src="./src/ico/menu.svg" alt=""> <span class="hidden-md">MENU</span> </div>
+                    <div> <img src="./src/ico/close.svg" alt=""> <span class="hidden-md">MENU</span> </div>                     
+                </div>
+                <div class="link-user user loged"> 
+                    <div>
+                        <a href="./login.html" class="hidden-log ico-user"> <img src="./src/ico/user.svg" alt="user"> </a>                   
+                        <a href="./login.html" class="hidden-md">LOGIN</a> <span class="hidden-md"> | </span>
+                        <a href="./cadastro.html" class="hidden-md">REGISTRAR</a>
+                    </div>
+                    <div>
+                        <a href="./perfil.html" class="hidden-log ico-user"> <img src="./src/ico/user.svg" alt="user"> </a>                   
+                        <span class="hidden-md">Olá <b>Bruno</b></span> <span class="hidden-md"> | </span>
+                        <a href="./perfil.html" class="hidden-md">Perfil</a>
+                    </div>
+                </div>
+                <div class="btn-addcart"><img src="./src/ico/cart.svg" alt=""></div>                    
+            </div>
+        </div>
+    </div>
+    <div class="inner inner-pop-menu menu">
+        <div class="container">
+            <div class="grid-pop-menu"></div>
+            <div class="space"></div>
+            <a href="./menu.html" class="link-menu-completo"> ver menu completo </a>
+        </div>
+    </div>
+
+    <div class="inner inner-produto-title">
+        <h1></h1>
+    </div>
+    <div class="inner inner-produto">
+        <div class="container">
+            <div class="space" style="--line:70px"></div>
+            <div class="grid-single-prod">
+                <img src="" alt="foto" id="product_image">
+                <div>
+                    <h4 id="product_title"></h4>
+                    <span id="product_price" class="prod-price"></span>
+                    <p id="product_description"></p>
+                    <div class="grid-quant">
+                        <img src="./src/ico/minus.svg" class="prod-ico" alt="del">
+                        <span class="prod-quant">1</span>
+                        <img src="./src/ico/plus.svg" class="prod-ico" alt="add">
+                        <div>
+                            <span class="btn-add-to-cart">
+                                <img src="./src/ico/cart.svg" alt="carrinho">
+                                <span>ADICIONAR</span>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="space" style="--line:70px"></div>
+        </div>
+    </div>
+    <div class="inner inner-footer">
+        <div class="container">
+            <div class="grid-footer">
+                <div>
+                    <img src="./src/image/logo.png" height="120" alt="">
+                    <p>
+                        ACERCA KAISÕ <br>
+                        ALERGÉNIOS <br>
+                        TERMOS E CONDIÇÕES <br>
+                        POLÍTICA DE PRIVACIDADE <br>
+                        LIVRO DE RECLAMAÇÕES <br>
+                        CONTATO@KAISO.PT <br>
+                    </p>
+                </div>
+                <div>
+                    <h3>CENTRO DE AJUDA</h3>
+                    <a href="mail:CONTATO@KAISO.PT" class="btn-to-email">
+                        <img src="./src/ico/email.svg" alt="">
+                        Precisa de ajuda?
+                    </a>
+                </div>
+                <div>
+                    <h3>NOSSAS REDES SOCIAIS</h3>
+                    <a href="https://www.facebook.com"> <img class="ico-redes" src="./src/ico/facebook.svg" alt=""> </a>
+                    <a href="https://www.instagram.com"> <img class="ico-redes" src="./src/ico/instagram.svg" alt=""> </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cart">
+        <div class="cart-header">
+            <img src="./src/ico/close.svg" height="30" alt="" class="cose-cart" > <br>
+            <div class="space"></div>
+            <strong>Dados da entrega</strong>
+            <p>José Mauro de Vasconcelos, 8 - Pirapora do Bom Jesus</p>
+            <b>Hoje</b>
+        </div>
+        <div class="cart-body">
+            <strong class="cart-title">
+                <span>Seu pedido</span>
+            </strong>
+            <span class="space"></span>
+            <div class="grid-iten-pedido">
+                <div>
+                    <b>1</b>
+                    <span>Missoshiro</span>
+                    <b>11,60 €</b>
+                    <span onclick="globalThis.add_to_cart('1')"><img src="./src/ico/trash.svg" alt="remover"></span>
+                </div>
+                <div>
+                    <b>1</b>
+                    <span>Cebiche de peixe branco</span>
+                    <b>13,90 €</b>
+                    <span onclick="globalThis.add_to_cart('1')"><img src="./src/ico/trash.svg" alt="remover"></span>
+                </div>
+            </div>
+            <span class="space"></span>
+            <strong class="cart-title">
+                <span>TOTAL</span>
+                <span> 25,50 €</span>
+            </strong>
+            <span class="space"></span>
+            <a href="./finalizar.html" class="btn-cart">Ir para pagamento</a>
+        </div>
+    </div>
+    <script src="./src/js/index.js" type="module"></script>
+</body>
+</html>

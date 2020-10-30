@@ -9,22 +9,25 @@
 </head>
 <body>
     <div class="load"> <img src="./src/image/logo.png" alt=""> </div>
+    <div class="cargar" hidden> <img src="./src/image/loading.gif" alt="cargar"> </div>
     <div class="inner inner-menu">
         <div class="container">
             <div class="grid-menu">
                 <div> <img src="./src/image/logo.png" alt=""> </div>
                 <div class="link-menu menu"> 
-                    <div> <img src="./src/ico/menu.svg" alt=""> MENU </div>
-                    <div> <img src="./src/ico/close.svg" alt=""> MENU </div>                     
+                    <div> <img src="./src/ico/menu.svg" alt=""> <span class="hidden-md">MENU</span> </div>
+                    <div> <img src="./src/ico/close.svg" alt=""> <span class="hidden-md">MENU</span> </div>                     
                 </div>
-                <div class="link-user user loged">                    
+                <div class="link-user user loged"> 
                     <div>
-                        <a href="./login.html">LOGIN</a> |
-                        <a href="./cadastro.html">REGISTRAR</a>
+                        <a href="./login.html" class="hidden-log ico-user"> <img src="./src/ico/user.svg" alt="user"> </a>                   
+                        <a href="./login.html" class="hidden-md">LOGIN</a> <span class="hidden-md"> | </span>
+                        <a href="./cadastro.html" class="hidden-md">REGISTRAR</a>
                     </div>
                     <div>
-                        Olá <b>Bruno</b> |
-                        <a href="./perfil.html">Perfil</a>
+                        <a href="./perfil.html" class="hidden-log ico-user"> <img src="./src/ico/user.svg" alt="user"> </a>                   
+                        <span class="hidden-md">Olá <b>Bruno</b></span> <span class="hidden-md"> | </span>
+                        <a href="./perfil.html" class="hidden-md">Perfil</a>
                     </div>
                 </div>
                 <div class="btn-addcart"><img src="./src/ico/cart.svg" alt=""></div>                    
@@ -40,7 +43,7 @@
     </div>
     <div class="inner inner-slider">
         <div class="inner inner-shadow inner-shadow-splide">
-            <div>
+            <div class="container-frete">
                 <h2 class="title-seach">
                     INSIRA A SUA LOCALIDADE E ESCOLHA <br>
                     O TIPO DE ENTREGA
@@ -131,11 +134,13 @@
                     <b>1</b>
                     <span>Missoshiro</span>
                     <b>11,60 €</b>
+                    <span onclick="globalThis.add_to_cart('1')"><img src="./src/ico/trash.svg" alt="remover"></span>
                 </div>
                 <div>
                     <b>1</b>
                     <span>Cebiche de peixe branco</span>
                     <b>13,90 €</b>
+                    <span onclick="globalThis.add_to_cart('1')"><img src="./src/ico/trash.svg" alt="remover"></span>
                 </div>
             </div>
             <span class="space"></span>

@@ -53,7 +53,7 @@ export default class View {
         if( $palco ) {
             $palco.innerHTML = products.map( prod => `
                 <div>
-                    <a href="./produto.html">
+                    <a href="./produto.html?id=${prod.id}">
                         <img src="${prod.foto}" alt="">
                         <span>${prod.title}</span>
                     </a>
@@ -69,9 +69,9 @@ export default class View {
     {
         let $play = document.querySelector( ".play" )
         let $bg   = document.querySelector('.inner-slider')
-        $bg.style.backgroundImage = `url('${globalThis.slider.itens[globalThis.slider.step]}')`
-        if ( $play )
+        if ( $play && $bg )
         {
+            $bg.style.backgroundImage = `url('${globalThis.slider.itens[globalThis.slider.step]}')`
             $play.innerHTML = globalThis.slider.itens.map( ( control, key ) => `
                 <span class="${ key == globalThis.slider.step && 'active' }" >${key}</span>
             ` ).join('')
